@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -84,6 +85,15 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-# Templates directory
+# Templates
 
-TEMPLATE_DIRS = {os.path.join(BASE_DIR, 'templates')}
+# TEMPLATE_LOADERS = (
+#     'django.template.loaders.filesystem.Loader',
+#     'django.template.loaders.app_directories.Loader',
+# #     'django.template.loaders.eggs.Loader',
+# )
+
+TEMPLATE_DIRS = (
+    # os.path.join(BASE_DIR, 'templates'),
+    "./vandali/templates/vandali"
+)
