@@ -1,0 +1,19 @@
+{% load staticfiles %}
+{% autoescape off%}
+<!DOCTYPE html>
+<html>
+<head>
+	{% block extra_head %}
+	{% endblock %}
+	<title>{% block title%} {% endblock %} | Vandali </title>
+</head>
+<body>
+	{% block body %}
+	{% block menu %}
+	{% endblock %}
+	{% block content %}
+	{% endblock %}
+	{% endblock %}
+</body>
+</html>
+{% endautoescape %}
