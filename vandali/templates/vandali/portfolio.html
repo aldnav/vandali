@@ -2,11 +2,22 @@
 {% block title %}
 Portfolio
 {% endblock %}
+{% autoescape on %}
 {% block body %}
-{% block menu %}
-	{% include "menu.html" %}
-{% endblock%}
-{% block content %}
-	What I do?
+<div class="container">
+{% block banner %}
+    {% include "banner.html" %}    
 {% endblock %}
+{% block menu %}
+    {% include "menu.html" %}    
+{% endblock %}
+{% block content %}
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+        What I do?
+        </div>
+    </div>
+{% endblock %}
+</div>
 {% endblock%}
+{% endautoescape %}

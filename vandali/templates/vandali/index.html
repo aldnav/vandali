@@ -2,11 +2,22 @@
 {% block title %}
 Welcome to my web space!
 {% endblock %}
+{% autoescape on %}
 {% block body %}
-{% block menu %}
-	{% include "menu.html" %}
-{% endblock%}
-{% block content %}
-	Home
+<div class="container">
+{% block banner %}
+    {% include "banner.html" %}    
 {% endblock %}
+{% block menu %}
+    {% include "menu.html" %}
+{% endblock %}
+{% block content %}
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+        I am home
+        </div>
+    </div>
 {% endblock%}
+</div>
+{% endblock%}
+{% endautoescape %}

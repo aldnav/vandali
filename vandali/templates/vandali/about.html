@@ -2,11 +2,22 @@
 {% block title %}
 About me
 {% endblock %}
+{% autoescape on %}
 {% block body %}
-{% block menu %}
-	{% include "menu.html" %}
-{% endblock%}
-{% block content %}
-	About me
+<div class="container">
+{% block banner %}
+    {% include "banner.html" %}    
 {% endblock %}
+{% block menu %}
+    {% include "menu.html" %}    
+{% endblock %}
+{% block content %}
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+        About me.
+        </div>
+    </div>
+{% endblock %}
+</div>
 {% endblock%}
+{% endautoescape %}

@@ -1,7 +1,15 @@
-<ul>
-    <li><a href="{% url 'vandali:index' %}">Home</a></li>
-    <li><a href="{% url 'vandali:about' %}">About</a></li>
-    <li><a href="{% url 'vandali:portfolio' %}">Portfolio</a></li>
-    <li><a href="{% url 'vandali:contact' %}">Contact</a></li>
-    <li><a href="{% url 'vandali:blog' %}">Blog</a></li>
-</ul>
+<div class="row clearfix">
+	<div class="col-md-12 column">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">		
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="{% url 'vandali:index' %}">Home</a></li>
+					<li><a href="{% url 'vandali:about' %}">About</a></li>
+					<li><a href="{% url 'vandali:portfolio' %}">Portfolio</a></li>
+					<li><a href="{% url 'vandali:contact' %}">Contact</a></li>
+				</ul>
+			</div>
+			
+		</nav>
+	</div>
+</div>
